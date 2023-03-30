@@ -4,7 +4,7 @@
 // 範例：5 -> 101 -> 2 個 1
 
 function countBits(num) {
-  // 實作寫在這裡
+  return [...num.toString(2)].filter((n) => n === "1").length;
 }
 
 console.log(countBits(1234)) // 5
